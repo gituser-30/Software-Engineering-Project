@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #00d4ff, #6e00ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 350px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: white;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+
+    button {
+      width: 95%;
+      padding: 12px;
+      border: none;
+      margin-top: 15px;
+      border-radius: 10px;
+      background: #00fff2;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c2b6;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome Back</h2>
+
+    <input id="email" placeholder="Email Address">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
